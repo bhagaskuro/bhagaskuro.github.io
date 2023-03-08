@@ -2888,3 +2888,6 @@ iframe {border: none;}
 	bottom: 0px;
 }
 
+.bg{
+    background-image: url(../img/bg-maintenance.jpg);
+}
