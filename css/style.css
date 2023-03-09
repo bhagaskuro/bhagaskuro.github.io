@@ -1,64 +1,195 @@
 /* Start your CSS code here */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 
-nav {
-    overflow: hidden;
+/* sidebar  */
+body{
+    margin: 0px;
+}
+.sidebar{
+    background-color: rgb(77, 77, 77);
+    width: 20%;
     height: 100%;
-    width : 280px;
-    background-color: rgb(138, 138, 138);
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    float: left;
     display: block;
+    position: fixed;
 }
 
-nav .logo {
+.logo{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: -20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    background-color: rgb(254, 143, 143);
+    height: 100%;
+    padding-left: 20%;
+}
+
+.footer-copy{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer-copy p{
+    padding-left: 20px;
+    
+}
+
+.logo {
     font-size: 1.rem;
     position: relative;
 }
 
-nav .logo img {
-    padding-left: 10px;
+.logo img {
+    margin-top: -60px;
     width: 250px;
 }
 
-nav li {
+.sidebar li {
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     font-size: 25px;
+    padding-left: 30px;
 }
 
-nav a {
+.sidebar a {
     text-decoration: none;
-    color: rgb(78, 71, 71);
+    color: rgb(255, 255, 255);
     font-family: Arial;
     padding: 0px 10px;
     font-weight: bold;
     transition: 0.15s;
 }
 
-nav a:hover {
-    color: aliceblue;
+/* popup */
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
 }
 
-.container{
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    height: 100%;
-    padding-left: 30%;
+.popup .content iframe{
+    text-align: center;
+}
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: #fff;
+    width: 1200px;
+    height: 700px;
+    z-index: 1;
+    padding-left: 100px;
+    padding-right: 80px;
+    box-sizing: border-box;
 }
 
-.item
-{
-    padding-left: ;
-    width: 20px;
-    height: 20px;
-    color: red;
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+/* carousel */
+
+section .poster {
+    padding-top: 35%;
+    padding-left: 22%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    padding-top: 12%;
+    padding-left: 25%;
+}
+
+.slide[data-active]{
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+}
+
+section .poster img {
+    padding-left: 20px;
+    height: 350px;
+    width: 233.33px;
+    object-fit: cover;
+}
+
+section .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 6rem;
+    top: 65%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 20%;
+}
+
+.carousel-button.next {
+    right: 26px;
+}
+
+li {
+    list-style: none;
 }
