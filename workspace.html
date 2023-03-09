@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="icon" href="img/logo.png">
     <title>Hackaton8</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,19 +18,41 @@
             <img src="img/logo2.png" alt="">
         </div>
         <ul>
-            <li><a href="#">Home</a></li>   
-            <li><a href="#">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Series</a></li>
             <li><a href="#">About</a></li>
         </ul>
     </nav>
-    <div class = "container">
-        <div class="item">
-
-        </div>
-
+    <div class="container">
+        <section>
+            <div class="poster" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="\img\Series1.jpg" alt="">
+                        <img src="\img\Series2.jpg" alt="">
+                        <img src="\img\Series3.jpg" alt="">
+                        <img src="\img\Series4.jpg" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="\img\Series5.jpg" alt="">
+                        <img src="\img\Series6.jpg" alt="">
+                        <img src="\img\Series7.jpg" alt="">
+                        <img src="\img\Series8.jpg" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="\img\Series9.jpg" alt="">
+                        <img src="\img\Series10.jpg" alt="">
+                        <img src="\img\Series11.png" alt="">
+                        <img src="\img\Series12.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
-
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

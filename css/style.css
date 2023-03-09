@@ -9,8 +9,8 @@ body {
 nav {
     overflow: hidden;
     height: 100%;
-    width : 280px;
-    background-color: rgb(138, 138, 138);
+    width: 280px;
+    background-color: rgb(224, 163, 48);
     position: fixed;
     top: 0;
     display: flex;
@@ -48,17 +48,72 @@ nav a:hover {
     color: aliceblue;
 }
 
-.container{
-    background-image: url(../img/bg.jpg);
+.container {
     background-size: cover;
     height: 100%;
-    padding-left: 30%;
 }
 
-.item
-{
-    padding-left: ;
-    width: 20px;
-    height: 20px;
-    color: red;
+section .poster {
+    padding-top: 35%;
+    padding-left: 22%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    padding-top: 12%;
+    padding-left: 25%;
+}
+
+.slide[data-active]{
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+}
+
+section .poster img {
+    padding-left: 20px;
+    height: 350px;
+    width: 233.33px;
+    object-fit: cover;
+}
+
+section .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 6rem;
+    top: 65%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 20%;
+}
+
+.carousel-button.next {
+    right: 26px;
+}
+
+li {
+    list-style: none;
 }
