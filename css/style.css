@@ -1,1 +1,64 @@
 /* Start your CSS code here */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav {
+    overflow: hidden;
+    height: 100%;
+    width : 280px;
+    background-color: rgb(138, 138, 138);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    display: block;
+}
+
+nav .logo {
+    font-size: 1.rem;
+    position: relative;
+}
+
+nav .logo img {
+    padding-left: 10px;
+    width: 250px;
+}
+
+nav li {
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(78, 71, 71);
+    font-family: Arial;
+    padding: 0px 10px;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+nav a:hover {
+    color: aliceblue;
+}
+
+.container{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    height: 100%;
+    padding-left: 30%;
+}
+
+.item
+{
+    padding-left: ;
+    width: 20px;
+    height: 20px;
+    color: red;
+}
