@@ -33,18 +33,14 @@ body{
 .container{
     background-color: rgb(254, 143, 143);
     height: 100%;
-    padding-left: 20%;
-}
-
-.footer-copy{
-    color: white;
-    position: absolute;
-    bottom: 0px;
-}
-
-.footer-copy p{
-    padding-left: 20px;
-    
+    width : 280px;
+    background-color: rgb(138, 138, 138);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    display: block;
 }
 
 .logo {
@@ -186,8 +182,11 @@ section .carousel-button {
     left: 20%;
 }
 
-.carousel-button.next {
-    right: 26px;
+.container{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    height: 100%;
+    padding-left: 30%;
 }
 
 li {
