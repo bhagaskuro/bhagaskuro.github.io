@@ -68,6 +68,10 @@ body{
     padding-left: 30px;
 }
 
+.poster ul{
+    margin-top :-16px
+}
+
 .sidebar a {
     text-decoration: none;
     color: rgb(255, 255, 255);
