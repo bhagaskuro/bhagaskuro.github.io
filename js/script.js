@@ -26,11 +26,11 @@ function myHome() {
 
     var home = document.getElementById("home");
     var series = document.getElementById("series");
-    var movie = document.getElementById("movie");
+    var about = document.getElementById("about");
     if (home.style.display === "none") {
         home.style.display = "block";
         series.style.display = "none";
-        movie.style.display = "none";
+        about.style.display = "none";
     }
 }
 
@@ -38,23 +38,23 @@ document.getElementById("bseries").onclick = function () { mySeries() };
 function mySeries() {
     var home = document.getElementById("home");
     var series = document.getElementById("series");
-    var movie = document.getElementById("movie");
+    var about = document.getElementById("about");
     if (series.style.display === "none") {
         home.style.display = "none";
         series.style.display = "block";
-        movie.style.display = "none";
+        about.style.display = "none";
     }
 }
 
-document.getElementById("bmovie").onclick = function () { myMovie() };
-function myMovie() {
+document.getElementById("babout").onclick = function () { myAbout() };
+function myAbout() {
     var home = document.getElementById("home");
     var series = document.getElementById("series");
-    var movie = document.getElementById("movie");
-    if (movie.style.display === "none") {
+    var about = document.getElementById("about");
+    if (about.style.display === "none") {
         home.style.display = "none";
         series.style.display = "none";
-        movie.style.display = "block";
+        about.style.display = "block";
     }
 }
 
@@ -83,7 +83,7 @@ function lojin(){
     {
         alert("P unten, "+ name);
         document.getElementById("blogin").style.display ='none';
-        document.getElementById("bmovie").style.display ='block';
+        document.getElementById("babout").style.display ='block';
         document.getElementById('popup2').classList.toggle('active');
     }
     else{
