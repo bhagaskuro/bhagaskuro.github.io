@@ -3,6 +3,7 @@
 /* sidebar  */
 body{
     margin: 0px;
+    background-color: rgba(254, 143, 143, .5);
 }
 .sidebar{
     background-color: rgb(77, 77, 77);
@@ -18,11 +19,15 @@ body{
     padding-top: 30px;
 }
 
-.menu li{
+.menu ul{
     list-style: none;
     margin-left: -20px;
     padding-bottom: 20px;
     font-size: 20px;
+}
+
+.menu ul:Hover{
+    color: rgb(0, 0, 0);
 }
 
 .menu a{
@@ -31,7 +36,6 @@ body{
 }
 
 .container{
-    background-color: rgb(254, 143, 143);
     height: 100%;
     padding-left: 20%;
 }
@@ -89,6 +93,7 @@ body{
 .popup .content iframe{
     text-align: center;
 }
+
 .popup .close-btn{
     position: absolute;
     right: 20px;
@@ -103,6 +108,7 @@ body{
     text-align: center;
     border-radius: 50%;
 }
+
 .popup .content{
     position: absolute;
     top: 50%;
@@ -111,7 +117,7 @@ body{
     background-color: #fff;
     width: 1200px;
     height: 700px;
-    z-index: 1;
+    z-index: 3;
     padding-left: 100px;
     padding-right: 80px;
     box-sizing: border-box;
@@ -126,12 +132,63 @@ body{
     transform: translate(-50%,-50%) scale(1);
 }
 
+/* menu */
 
-/* carousel */
+.welcome {
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+}
+
+.quote-home {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    left: 320px;
+    top: 400px;
+    background-color: rgb(255, 118, 118);
+    border-radius: 20px;
+}
+
+/* About Us */
+
+.about-us-back {
+    position: relative;
+    left: 70px;
+    top: 60px;
+    width: 70vw;
+    height: 40vw;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.about-us-title {
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+
+.about-us {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 110px;
+}
+
+/* series */
 
 section .poster {
-    padding-top: 35%;
-    padding-left: 22%;
     position: relative;
 }
 
@@ -140,7 +197,7 @@ section .poster {
     inset: 0;
     opacity: 0;
     padding-top: 12%;
-    padding-left: 25%;
+    padding-left: 12%;
 }
 
 .slide[data-active]{
@@ -150,7 +207,7 @@ section .poster {
 }
 
 section .poster img {
-    padding-left: 20px;
+    padding-left: 30px;
     height: 350px;
     width: 233.33px;
     object-fit: cover;
@@ -158,38 +215,54 @@ section .poster img {
 
 section .carousel-button {
     position: absolute;
+    top: 200px;
     z-index: 2;
     background: none;
     border: none;
     font-size: 6rem;
-    top: 65%;
-    transform: translateY(-50%);
     color: rgba(255, 255, 255, .5);
     align-items: center;
     cursor: pointer;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-    background-color: rgba(0, 0, 0, .1);
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
+.carousel-button:hover{
     color: white;
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.carousel-button:focus {
-    outline: 1px solid black;
 }
 
 .carousel-button.prev {
-    left: 20%;
+    left: 3%;
 }
 
 .carousel-button.next {
-    right: 26px;
+    right: 3%;
 }
 
 li {
     list-style: none;
+}
+
+/* login */
+
+#style2 input {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51);
+    color: lightgray;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 90%;
+    border: none;
+    outline-style: none;
+}
+
+
+#style2 input[type=button] {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
 }
